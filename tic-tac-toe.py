@@ -41,24 +41,24 @@ game_record = [ [ None, None, None],
 
 display_surface = pygame.display.set_mode( ( 600, 600 ),pygame.RESIZABLE   )
 display_surface.fill( white )
-board_image = pygame.image.load( 'board.png' )
+board_image = pygame.image.load( 'Dependencies\\board.png' )
 display_surface.blit( board_image, ( 90, 80 ) )
 pygame.display.update()
 
 pygame.display.toggle_fullscreen()
 
-pygame.mixer.music.load('monkeys.mp3')
+pygame.mixer.music.load('Dependencies\\monkeys.mp3')
 pygame.mixer.music.set_volume( 0.25 )
 pygame.mixer.music.play(-1,10)
 
-first_player_sound = pygame.mixer.Sound('player_one_sound.ogg')
+first_player_sound = pygame.mixer.Sound('Dependencies\\player_one_sound.ogg')
 first_player_sound.set_volume(1.0)
-second_player_sound = pygame.mixer.Sound('player_two_sound.ogg')
+second_player_sound = pygame.mixer.Sound('Dependencies\\player_two_sound.ogg')
 second_player_sound.set_volume(1.0)
-image_one = pygame.image.load( 'player_one.jpg ')
+image_one = pygame.image.load( 'Dependencies\\player_one.jpg ')
 image_one_rec_scale = pygame.transform.scale( image_one, (120,120) )
 
-image_two = pygame.image.load( 'player_two.jpg' )
+image_two = pygame.image.load( 'Dependencies\\player_two.jpg' )
 image_two_rec_scale = pygame.transform.scale( image_two, (120, 120) )
 
 
@@ -128,7 +128,7 @@ while True:
             pygame.mixer.music.stop()
             first_player_sound.stop()
             second_player_sound.stop()
-            pygame.mixer.music.load( 'Queen - We Are The Champions Lyrics.mp3' )
+            pygame.mixer.music.load( 'Dependencies\\Queen - We Are The Champions Lyrics.mp3' )
             pygame.mixer.music.play(0, 50)
 
             pygame.display.update()
@@ -137,11 +137,11 @@ while True:
 
             display_surface = pygame.display.set_mode( ( 600, 600 ) )
             display_surface.fill( white )
-            board_image = pygame.image.load( 'board.png' )
+            board_image = pygame.image.load( 'Dependencies\\board.png' )
             display_surface.blit( board_image, ( 90, 80 ) )
             pygame.display.update()
 
-            pygame.mixer.music.load('monkeys.mp3')
+            pygame.mixer.music.load('Dependencies\\monkeys.mp3')
             pygame.mixer.music.play(-1,10)
 
 
@@ -157,11 +157,11 @@ while True:
 
             display_surface = pygame.display.set_mode( ( 600, 600 ) )
             display_surface.fill( white )
-            board_image = pygame.image.load( 'board.png' )
+            board_image = pygame.image.load( 'Dependencies\\board.png' )
             display_surface.blit( board_image, ( 90, 80 ) )
             pygame.display.update()
 
-            pygame.mixer.music.load('monkeys.mp3')
+            pygame.mixer.music.load('Dependencies\\monkeys.mp3')
             pygame.mixer.music.play(-1,10)
 
 
