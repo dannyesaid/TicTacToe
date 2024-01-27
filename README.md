@@ -1,4 +1,4 @@
-# Pygame-Tic-Tac-Toe
+# TicTacToe
 
 One of my first personal projects. My nephew really liked this song. Download the project and run the executable. 
 
